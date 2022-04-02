@@ -47,7 +47,7 @@ public class ManagerArchivo { // checar que hago lo que se supone debe hacer
 
         // Checks if file1 exists
         if (file.exists() && !file.isDirectory()) {
-
+            validarEstructuraArchivo(ruta, 2, ',');
             return true;
         } else {
             return false;
@@ -72,7 +72,7 @@ public class ManagerArchivo { // checar que hago lo que se supone debe hacer
                 // Separar la linea leída con el separador definido previamente
                 String[] user = linea.split(SEPARADOR);
                 // guarda el primer user en el array
-                usersArray[index] = user; // guarda el user en el arreglo de users
+                usersArray[index] = user; // guarda el user en el arreglo de
                 index = index + 1;
 
                 // Volver a leer otra línea del fichero
@@ -91,7 +91,7 @@ public class ManagerArchivo { // checar que hago lo que se supone debe hacer
             }
         }
 
-        return String;
+        return usersArray;
     }
 
     public void updateLine(String str) {

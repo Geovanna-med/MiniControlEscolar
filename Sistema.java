@@ -8,6 +8,7 @@ public class Sistema {
     public boolean verificarArchivoUsuario() {
         if (managerArchivo.verificarExistenciaArchivo(rutaArchivo) == true) {
             managerArchivo.validarEstructuraArchivo(rutaArchivo, 2, ',');
+
             return true;
         } else {
             System.out.println("El archivo no se pudo verificar correctamente");
