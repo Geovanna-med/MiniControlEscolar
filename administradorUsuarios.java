@@ -1,8 +1,7 @@
-public class administradorUsuarios {
+public class AdministradorUsuarios {
+    private Usuario[] usuarios;
 
-    private String[][] usuarios;
-
-    public administradorUsuarios(String[][] usuarios) {
+    public AdministradorUsuarios(String[][] usuariosInfo) {
         this.usuarios = usuarios;
     }
 
